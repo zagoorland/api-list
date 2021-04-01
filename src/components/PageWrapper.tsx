@@ -16,13 +16,11 @@ interface IWrapper {
   children: React.ReactNode;
 }
 
-const PageWrapper = ({ children }: IWrapper) => {
-  return (
-    <StyledWrapper>
-      <Navbar />
-      {children}
-    </StyledWrapper>
-  );
-};
+const PageWrapper = ({ children }: IWrapper) => (
+  <StyledWrapper>
+    <Navbar />
+    {children}
+  </StyledWrapper>
+);
 
 export default PageWrapper;

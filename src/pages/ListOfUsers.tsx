@@ -70,6 +70,7 @@ const ListOfUsers = () => {
             <Card
               key={index}
               username={item.login}
+              id={item.id}
               handleClick={handleCardClick}
             />
           ))}
